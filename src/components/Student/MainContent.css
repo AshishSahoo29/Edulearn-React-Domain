@@ -1,0 +1,21 @@
+:root {
+    --pink: #FF919D;
+    --glass: rgba(255, 255, 255, 0.54);
+}
+.Main{
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+display: flex;
+flex-direction: column;
+background-color: var(--glass);
+border-radius: 0.7rem;
+margin-top: 4rem;
+margin-left: 3rem;
+height: 2.5rem;
+border:solid #FF919D;
+width: 80%;
+
+}
