@@ -5,6 +5,7 @@ import './Register.css';
  
 const Registration = () => {
     return (
+        <div className="Glasses">
         <div className="Form-glass">
             <form>
                 <div className="New">
@@ -35,6 +36,7 @@ const Registration = () => {
                 </div>
             </form>
         </div> 
+        </div>
      );
 }
  
