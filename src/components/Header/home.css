@@ -22,8 +22,9 @@
     background-color: #000;
 }
 .about img{
-	margin-right: 50px;
-	width: 450px;
+	margin-right: 10px;
+	width: 30px;
+    height: 20px;
     padding-left: 30px;
 }
 .about-text{
@@ -32,25 +33,7 @@ color: #fff;
 font-size: large;
 text-align: inherit;
 }
-.slider{
-    width: 600px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-.slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-.slides input{
-    display: none;
-}
-.slides{
-    width: 20%;
-    transition: 2s;
 
-}
 .slides img{
     width: 800px;
     height: 500px;
@@ -105,7 +88,7 @@ text-align: inherit;
 }
 
 .main{
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(/images/photo.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(localhost:3001/images/photo.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -216,7 +199,6 @@ ul li a:hover{
     width: 1200px;
     height: auto;
     margin: auto;
-    color: #fff;
     position: relative;
 }
 
@@ -231,6 +213,7 @@ ul li a:hover{
 .content h1{
     font-family: 'Times New Roman';
     font-size: 50px;
+    padding-top: 100px;
     padding-left: 20px;
     
     letter-spacing: 2px;
@@ -335,7 +318,7 @@ h5{
     height: 480px;
     background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
     position: absolute;
-    top: -20px;
+    top:100px;
     left: 870px;
     transform: translate(0%,-5%);
     border-radius: 10px;

@@ -6,7 +6,6 @@ export default class Home extends React.Component{
         <div>
              <div className="main">
           
-        
         <div className="content">
             
             <h1>Welcome To <br/><span>EduLearn</span> !</h1>
@@ -36,7 +35,7 @@ export default class Home extends React.Component{
                 </div>
    <section className="about"/>
                     <div className="container">
-                        <img src="assets/images/teaching.jpg"  alt=""/>
+                    
                         <div className="about-text">
                             <h1>About Us</h1>
                             <br/>
@@ -53,29 +52,6 @@ export default class Home extends React.Component{
         </div>
     </div>
     
-    <div className="animation">
-        <div id="carouselExampleControls" className="carousel slide" data-mdb-ride="carousel">
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src="S3.jpg" className="d-block w-100" alt="Wild Landscape" />
-                </div>
-                <div className="carousel-item">
-                    <img src="S1.jpg" className="d-block w-100" alt="Camera" />
-                </div>
-                <div className="carousel-item">
-                    <img src="S2.jpg" className="d-block w-100" alt="Exotic Fruits" />
-                </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
     <div className="service">
 		<div className="title">
 			<h2>Our Services</h2>
@@ -139,10 +115,8 @@ export default class Home extends React.Component{
         <br/>
         <br/>&nbsp;
 		<p className="end">© CopyRight Reserve By EduLearn</p>
-	
 
-   
-        
+
         </footer>
         </div>
         );

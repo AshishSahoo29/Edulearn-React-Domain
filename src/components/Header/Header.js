@@ -19,7 +19,7 @@ export default class Navbar extends React.Component  {
     <nav className="navbar">
       
                    <p aling="left"> <button className="openbtn" onClick={this.openNav}>☰ Menu</button> </p>   
-      <h1>EduLearn</h1>
+      <h2>EduLearn</h2>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
