@@ -100,7 +100,7 @@ export default class Home extends React.Component{
         <div className="siteFooterBar">
             <center>
             <div className="content">
-                <img src="/cutm logo.png" alt='' width="100px" height="100px" />
+                <img src="./cutm-logo.png" alt='' width="100px" height="100px" />
             </div>
         </center>
         </div>
