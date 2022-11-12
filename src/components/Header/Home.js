@@ -7,6 +7,7 @@ export default class Home extends React.Component{
              <div className="main">
           
         <div className="content">
+            <img src="./images/cutm-logo.png"></img>
             
             <h1>Welcome To <br/><span>EduLearn</span> !</h1>
             <p className="par">
@@ -24,11 +25,14 @@ export default class Home extends React.Component{
                     <p className="link">Don't have an account<br/>
                     <a href="/#">Sign up </a> here</p>
                     <p className="liw">Log in with</p>
-                    <div className="icons">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="/#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="/#"><ion-icon name="logo-instagram"></ion-icon></a>
-                        <a href="/#"><ion-icon name="logo-google"></ion-icon></a>
-                    </div>
+                    <div className="symbol">
+			<a href="/#"><i className="fab fa-google"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="/#"><i className="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="/#"><i className="fab fa-facebook-f"></i></a>
+            <div/>
+            
+    
+		</div>
 
                 </div>
                     </div>
@@ -99,8 +103,8 @@ export default class Home extends React.Component{
         Find us </p>
         <div className="siteFooterBar">
             <center>
-            <div className="content">
-                <img src="./cutm-logo.png" alt='' width="100px" height="100px" />
+            <div className="ft">
+            <img src="./images/cutm-logo.png"></img>
             </div>
         </center>
         </div>
@@ -113,6 +117,10 @@ export default class Home extends React.Component{
         <br/>
 		</div>
         <br/>
+        <br></br><br/>
+        <br></br><br/>
+        <br></br><br></br><br/>
+        <br></br>
         <br/>&nbsp;
 		<p className="end">© CopyRight Reserve By EduLearn</p>
 
