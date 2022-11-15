@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useRef } from "react";
 import './home.css';
 
 
-export default class Home extends React.Component{
-    render(){ return(
+ const Home = ()=>{
+    const Email=useRef(null);
+    const Password=useRef(null);
+    
+    function login(){
+//        console.log(Password.current.value)
+          fetch('http://localhost:8080/api/users/login', {
+                    method: 'POST',
+                    headers: {
+                      'Accept': '*/*',
+                      'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                      email:Email.current.value,
+                      password:Password.current.value
+                      
+                    })
+                  }).then(Response=>Response.json())
+                      .then((Result)=>{
+                        console.log(Result);
+                      if(Result.status==="200"){
+                       window.localStorage.setItem("userid", Result.result);
+                       //window.localStorage.setItem("users", JSON.stringify(Result));
+                       window.location.href=("/Dashboard");
+                       alert("Successfully");}
+                      else{
+                          alert("Sorry error");
+                    }})
+                  
+     
+       }
+
+     return(
 <div>
         <div>
              <div className="main">
@@ -21,12 +52,12 @@ export default class Home extends React.Component{
                 
                 <div className="form">
                     <h2>Login Here</h2>
-                    <input type="email" name="email" placeholder="Enter Username"/>
-                    <input type="password" name="" placeholder="Enter Password "/>
-                    <button className="btnn"><a href="/#">Login</a></button>
+                    <input type="email" ref={Email} name="email" placeholder="Enter Username"/>
+                    <input type="password" ref={Password} placeholder="Enter Password "/>
+                    <button onClick={login} className="btnn">Login</button>
 
                     <p className="link">Don't have an account<br/>
-                    <a href="/#">Sign up </a> here</p>
+                    <a href="/Registration">Sign up </a> here</p>
                     <p className="liw">Log in with</p>
                     <div className="symbol">
 			<a href="/#"><i className="fab fa-google"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -135,4 +166,5 @@ export default class Home extends React.Component{
         );
     
 }
-}
+
+export default Home;

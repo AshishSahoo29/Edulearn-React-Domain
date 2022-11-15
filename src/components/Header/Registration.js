@@ -20,7 +20,7 @@ const Registration = () => {
   
   }*/
   function register(){
-   alert(Email.current.value);
+  // alert(Email.current.value);
      fetch('http://localhost:8080/api/users/signup', {
                method: 'post',
                headers: {
