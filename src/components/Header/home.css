@@ -6,9 +6,10 @@
 
 .container{
     width: 1000px;
-    display: flex;
-    align-items: center;
+    display: flex;    
+    align-items: center;    
     background-color: black;
+    margin-left: 40rem;
 }
 .about h1{
     font-family: 'Times New Roman';
@@ -20,6 +21,7 @@
 	width: 100%;
     padding: 78px 0px;
     background-color: #000;
+    
 }
 .about img{
 	margin-right: 10px;
@@ -32,6 +34,8 @@
 color: #fff;
 font-size: large;
 text-align: inherit;
+
+
 }
 
 .slides img{
@@ -88,7 +92,7 @@ text-align: inherit;
 }
 
 .main{
-    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(localhost:3001/images/photo.jpg);
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(/images/photo.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -215,6 +219,7 @@ ul li a:hover{
     font-size: 50px;
     padding-top: 100px;
     padding-left: 20px;
+    color: #f1f1f1;
     
     letter-spacing: 2px;
 }

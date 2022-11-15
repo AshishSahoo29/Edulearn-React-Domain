@@ -1,5 +1,7 @@
 import React from "react";
 import './home.css';
+import teach from '../images/teaching.jpg';
+
 
 export default class Home extends React.Component{
     render(){ return(
@@ -8,6 +10,7 @@ export default class Home extends React.Component{
              <div className="main">
           
         <div className="content">
+            
             
             <h1>Welcome To <br/><span>EduLearn</span> !</h1>
             <p className="par">
@@ -34,8 +37,10 @@ export default class Home extends React.Component{
                 </div>
                     </div>
                 </div>
+                
    <section className="about"/>
                     <div className="container">
+                        
                     
                         <div className="about-text">
                             <h1>About Us</h1>
