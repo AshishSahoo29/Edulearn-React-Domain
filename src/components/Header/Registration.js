@@ -1,11 +1,11 @@
-import React from "react";
-
+import React, { Component } from "react";
+import { Button, Form, Input,InputGroup } from 'reactstrap';
 import './Register.css';
 
  
-export default class Registration extends React.Component  {
-    constructor (){
-        super();
+export default class Registration extends Component  {
+    constructor (props){
+        super(props);
         this.state={
             firstName:'',
             Username:'',
@@ -13,16 +13,16 @@ export default class Registration extends React.Component  {
             Password:'',
             RType:'',
            
-        }
+        };/*
         this.firstName=this.firstName.bind(this);
         this.Username=this.Username.bind(this);
         this.Email=this.Email.bind(this);
         this.Password=this.Password.bind(this);
-        this.RType=this.RType.bind(this);
+        this.RType=this.RType.bind(this);*/
      }
-
+/*
      firstName(event){
-        this.setState({firstName:event.target.value})
+        this.setState({firstName:event.value})
      }
 
      Username(event){
@@ -39,8 +39,9 @@ export default class Registration extends React.Component  {
      RType(event){
         this.setState({RType:event.target.value})
      }
-
-     register(event){
+     */
+     register(){
+      alert(this.state.firstName);
         fetch('http://localhost:8080/api/users/signup', {
                   method: 'post',
                   headers: {
@@ -48,11 +49,11 @@ export default class Registration extends React.Component  {
                     'Content-Type': 'application/json'
                   },
                   body: JSON.stringify({
-                    name:this.state.firstName,
-                    username:this.state.Username,
-                    email:this.state.Email,
-                    password:this.state.Password,
-                    roles:this.state.RType
+                     firstName:this.state.firstName,
+                     Username:this.state.Username,
+                    Email:this.state.Email,
+                    Password:this.state.Password,
+                    RTpye:this.state.RType
                     
                   })
                 }).then(Response=>Response.json())
@@ -69,31 +70,43 @@ export default class Registration extends React.Component  {
     return (
         <div className="Glasses">
         <div className="Form-glass">
-            <form>
-                <div className="New">
-                <label >Full Name</label>
-                <input type="text" onChange={this.firstName} 
-                placeholder="Your name.."></input>
+            <Form>
+                <InputGroup className="mb-3">
+
+                      <Input type="text" onChangeText={this.firstName} />
+
+                    </InputGroup>
         
-                <label >Username</label>
-                <input type="text" onChange={this.Username}
-                placeholder="Your  Username.."></input>      
-                      
-                <label>Type</label>
-                <input type="text" onChange={this.RType} 
-                placeholder="Your email id.."></input>
+                 <InputGroup className="mb-3">
+
+                      <Input type="text"  onChange={this.Username} placeholder="Enter Employee Name" />
+
+                    </InputGroup>
+
+
+                 <InputGroup className="mb-3">
+
+                      <Input type="text"  onChange={this.RType} placeholder="Enter Employee Name" />
+
+                    </InputGroup>
+
+
+              <InputGroup className="mb-3">
+
+                      <Input type="text"  onChange={this.Email} placeholder="Enter Employee Name" />
+
+                    </InputGroup>
+
+
+                   <InputGroup className="mb-3">
+
+                      <Input type="text"  onChange={this.Password} placeholder="Enter Employee Name" />
+
+                    </InputGroup>
+
+                    <Button  onClick={this.register}  color="success" block>Create Account</Button>             
                 
-                <label>Email Id</label>
-                <input type="text" onChange={this.Email} 
-                placeholder="Your email id.."></input>
-        
-                <label >Password</label>
-                <input type="Password" onChange={this.Password}
-                placeholder="Enter your password.."></input>
-                
-                <input type="submit" onClick={this.register}/>             
-                </div>
-            </form>
+            </Form>
         </div> 
         </div>
      );
