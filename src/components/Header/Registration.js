@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
-import { Button, Form, Input,InputGroup } from 'reactstrap';
+import { Button, Form, InputGroup } from 'reactstrap';
 import './Register.css';
-
+//import Dashboard from "./Dashboard";
  
 
 const Registration = () => {
@@ -38,7 +38,10 @@ const Registration = () => {
              }).then(Response=>Response.json())
                  .then((Result)=>{
                  if(Result.status===1){
-                 alert("Successfully");}
+                  window.localStorage.setItem("authenticated", true);
+                  window.localStorage.setItem("users", JSON.stringify(Result));
+                  window.location.href=("/Dashboard");
+                  alert("Successfully");}
                  else{
                      alert("Sorry error");
                }})

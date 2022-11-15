@@ -1,26 +1,16 @@
-import React, { Component } from 'react';
-
-  class Dashboard extends Component {
-
-    render() {
-
-
-        return (
-
-            <div  className="mb-2 pageheading">
-
-                <div className="col-sm-12 btn btn-primary">
-                Dashboard
-                     
-
-             </div>
-
-            </div>
-
-        );
-
+import React from 'react';
+const Dashboard = () => {
+    const loggedInUser = localStorage.getItem("authenticated");
+    if (!loggedInUser) {
+      alert("Login required");
+      window.location.href=("/");
     }
-
-}
-
+ else {
+    return (
+      <div>
+        <p>Welcome to your Dashboard</p>
+      </div>
+    );
+  }
+};
 export default Dashboard;

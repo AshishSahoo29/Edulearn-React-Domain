@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Register from '../components/Header/Registration';
 import Header from '../components/Header/Header';
@@ -24,9 +24,9 @@ function App() {
 
           </Routes>
           <Routes>  
-31
-        <Route path='/Dashboard' component={Dashboard} />    
-32
+          <Route path='/Dashboard' element={<Dashboard/>} />    
+
+
         </Routes>  
         </Router>
      

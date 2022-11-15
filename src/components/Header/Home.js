@@ -1,6 +1,5 @@
 import React from "react";
 import './home.css';
-import teach from '../images/teaching.jpg';
 
 
 export default class Home extends React.Component{
@@ -10,7 +9,7 @@ export default class Home extends React.Component{
              <div className="main">
           
         <div className="content">
-            <img src="./images/cutm-logo.png"></img>
+            <img src="./images/cutm-logo.png" alt=""></img>
             
             
             <h1>Welcome To <br/><span>EduLearn</span> !</h1>
@@ -110,7 +109,7 @@ export default class Home extends React.Component{
         <div className="siteFooterBar">
             <center>
             <div className="ft">
-            <img src="./images/cutm-logo.png"></img>
+            <img src="./images/cutm-logo.png" alt=""></img>
             </div>
         </center>
         </div>
