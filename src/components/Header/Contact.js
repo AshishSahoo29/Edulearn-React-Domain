@@ -1,12 +1,12 @@
 import React from "react";
-
+import '../Header/Contact.css';
 
 const Contact = () => {
     return ( 
-        <div className="Form-glass">
+        <div className="CT-main">
             <h1>Contact Form</h1>
             <form>
-                <div className="forme">
+                <div className="ctf">
                 <label>name</label>
                 <input type='text' name='name'></input>
 
