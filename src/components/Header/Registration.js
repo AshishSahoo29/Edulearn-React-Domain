@@ -77,24 +77,20 @@ export default class Registration extends React.Component  {
         
                 <label >Username</label>
                 <input type="text" onChange={this.Username}
-                placeholder="Your  Username.."></input>
-        
-      
-                  
-        
-                    <label>Type</label>
+                placeholder="Your  Username.."></input>      
+                      
+                <label>Type</label>
                 <input type="text" onChange={this.RType} 
                 placeholder="Your email id.."></input>
-         <label>Email Id</label>
+                
+                <label>Email Id</label>
                 <input type="text" onChange={this.Email} 
                 placeholder="Your email id.."></input>
         
                 <label >Password</label>
                 <input type="Password" onChange={this.Password}
                 placeholder="Enter your password.."></input>
-        
-        
-        
+                
                 <input type="submit" onClick={this.register}/>             
                 </div>
             </form>
