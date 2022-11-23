@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Dashboard = () => {
     const loggedInUser = localStorage.getItem("authenticated");
     if (!loggedInUser) {

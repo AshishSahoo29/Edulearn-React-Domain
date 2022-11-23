@@ -98,34 +98,34 @@ const Registration = () => {
         <div className="Form-glass">
             <Form>
                 <InputGroup className="mb-3">
-
+                     <label>Name</label>
                       <input type="text" ref={Name}  id="message" name="Name"/>
 
                     </InputGroup>
         
                     <InputGroup className="mb-3">
-
+                    <label>Username</label>
                      <input type="text" ref={Username} placeholder="Enter Username" />
 
                      </InputGroup>
 
-
+                     
                      <InputGroup className="mb-3">
-
+                     <label>Type</label>
                      <input type="text"  ref={RType} placeholder="Enter Type" />
 
                      </InputGroup>
 
 
                      <InputGroup className="mb-3">
-
+                     <label>Email</label>
                      <input type="text"  ref={Email} placeholder="Enter Email" />
 
                      </InputGroup>
 
 
                      <InputGroup className="mb-3">
-
+                     <label>Password</label>
                      <input type="text"  ref={Password} placeholder="Enter Password" />
 
                      </InputGroup>
