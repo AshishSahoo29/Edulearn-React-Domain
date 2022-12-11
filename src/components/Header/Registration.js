@@ -1,6 +1,7 @@
 import React, {useRef} from "react";
 import { Button, Form, InputGroup } from 'reactstrap';
 import './Register.css';
+import configData from './config.json'
 //import Dashboard from "./Dashboard";
  
 
@@ -10,18 +11,10 @@ const Registration = () => {
    const Username = useRef(null);
    const Password = useRef(null);
    const RType = useRef(null);
-/*
-  function handleClick() {
-   console.log(Name.current.value);
-   console.log(Email.current.value);
-   console.log(Username.current.value);
-   console.log(Password.current.value);
-   console.log(RType.current.value);
-  
-  }*/
+
   function register(){
   // alert(Email.current.value);
-     fetch('http://localhost:8080/api/users/signup', {
+     fetch(configData.SERVER_URL+ 'api/users/signup', {
                method: 'post',
                headers: {
                  'Accept': '*/*',
@@ -48,48 +41,7 @@ const Registration = () => {
              //  console.log(body)
 
   }
-   /*constructor (props){
-        super(props);
-        this.state={
-            firstName:'',
-            Username:'',
-            Email:'',
-            Password:'',
-            RType:'',
-           
-        };
-      */ 
-        
-       //};
-        
-        
-        /*
-        this.firstName=this.firstName.bind(this);
-        this.Username=this.Username.bind(this);
-        this.Email=this.Email.bind(this);
-        this.Password=this.Password.bind(this);
-        this.RType=this.RType.bind(this);*/
-     
-/*
-     firstName(event){
-        this.setState({firstName:event.value})
-     }
-
-     Username(event){
-        this.setState({Username:event.target.value})
-     }
-
-     Email(event){
-        this.setState({Email:event.target.value})
-     }
-
-     Password(event){
-        this.setState({Password:event.target.value})
-     }
-     RType(event){
-        this.setState({RType:event.target.value})
-     }
-     */
+  
      
    
 
