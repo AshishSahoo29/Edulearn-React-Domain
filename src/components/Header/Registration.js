@@ -1,7 +1,7 @@
 import React, {useRef} from "react";
 import { Button, Form, InputGroup } from 'reactstrap';
 import './Register.css';
-import configData from './config.json'
+import configData from '../../config.json'
 //import Dashboard from "./Dashboard";
  
 
