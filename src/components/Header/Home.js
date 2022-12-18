@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import './home.css';
+import configData from '../../config.json'
 
 
  const Home = ()=>{
@@ -8,7 +9,7 @@ import './home.css';
     
     function login(){
 //        console.log(Password.current.value)
-          fetch('http://localhost:8080/api/users/login', {
+          fetch(configData.SERVER_URL+'api/users/login', {
                     method: 'POST',
                     headers: {
                       'Accept': '*/*',

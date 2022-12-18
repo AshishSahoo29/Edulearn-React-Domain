@@ -24,10 +24,8 @@ function App() {
 
           </Routes>
           <Routes>  
-          <Route path='/Dashboard' element={<Dashboard/>} />    
-
-
-        </Routes>  
+              <Route path='/Dashboard' element={<Dashboard/>} />    
+          </Routes>  
         </Router>
      
       </>
