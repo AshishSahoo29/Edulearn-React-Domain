@@ -7,7 +7,7 @@ import Home from './Header/Home';
 import Contact from '../components/Header/Contact';
 import About from '../components/Header/About';
 import Dashboard from './Header/Dashboard';
-
+import performance from './Performance Module/per'
 
 
 
@@ -21,8 +21,8 @@ function App() {
               <Route path='/contact' element={<Contact/>} />
               <Route path='/about' element={<About/>} />
               <Route path='/Registration' element={<Register/>} />
-
-          </Routes>
+              <Route path='/Performance'>{<performance/>}</Route>
+              </Routes>
           <Routes>  
               <Route path='/Dashboard' element={<Dashboard/>} />    
           </Routes>  
