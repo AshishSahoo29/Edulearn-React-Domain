@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom";
 import './Sidebar.css'
 
 
@@ -21,10 +22,12 @@ const Sidebar = () => {
               <div className={selected===index?'menu-item active':'menu-item'}
               key={index}
               onClick={()=>setSelected(index)}
+              onDoubleClick={()=>this.state({showSomething: true})}
               >
                 <span>
                   {item.heading}
                 </span>
+                <Link to = {item.URL} ></Link>
               </div>
             )
           })}

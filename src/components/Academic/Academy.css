@@ -1,0 +1,53 @@
+.Aca{
+    background: linear-gradient(
+          106.37deg,
+          #95f195c1 29.63%,
+          #7e9dd7 51.55%,
+          #93a2ed 90.85%
+        );
+        height:100vh ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.Ac-card{
+    display: flex;
+    flex-direction: column;
+    background:var(--glass);
+    width: 50%;
+    row-gap: 8px;
+    margin: auto;
+    height: 450px;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(94, 23, 237, 0.573);
+    transition: 0.3s;
+       
+}
+.Ac-card h1{
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 7rem;
+    color: darksalmon;
+}
+.Ac-card a{
+    text-align: center;
+    justify-items: center;
+    
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(11, 11, 11);
+    text-decoration: solid;
+}
+.Ac-card p{
+    text-align: center;
+    justify-items: center;
+    
+    font-size: 11px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(118, 5, 5);
+    text-decoration: solid;
+
+}

@@ -1,0 +1,83 @@
+.Quest{
+    background: linear-gradient(
+        106.37deg,
+        #efdab7 29.63%,
+        #f3c0c6 51.55%,
+        #d6b4ef 90.85% 
+    );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Q-card{
+    background: var(--glass);
+    height: 96%;
+    width: 96%;
+}
+.Q-Set{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    
+    
+}
+.Info{
+    background: rgb(202, 228, 244);
+    height: 500px;
+    width: 350px;
+    border-width: 5px;
+    border-color: darkblue;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 1.5rem;
+    
+}
+.Info input{
+    margin-top: 25px;
+    margin-left: 15px;
+    border-width: 2px;
+}
+.Info label{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+.Question{
+   background:rgb(255, 253, 253);
+   height:500px;
+   width: 700px;
+   margin-top: 32px;
+   border-radius: 1rem;
+   border-width: 5px;
+   border-color: rgb(234, 63, 63);
+   overflow-y: scroll;   
+}
+.Question input {
+   width: 568px; 
+   border-width: 2px;  
+   border-color: darkblue; 
+}
+.Rad{
+    margin-left: 48px;
+    width: 100px;
+}
+.Btn{
+    display: flex;
+    flex-direction:column-reverse;
+    gap: .5rem;
+    align-items: flex-end;
+    margin-left: 300px;
+    margin-right: 48px;
+    margin-top: 120px;
+    font-weight: bolder;
+    color:rgb(169, 15, 15); 
+    
+}
+.Btn button{
+    background-color: rgb(192, 240, 254);
+}

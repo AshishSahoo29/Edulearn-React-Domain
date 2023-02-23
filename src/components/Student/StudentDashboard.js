@@ -2,6 +2,7 @@ import React  from 'react';
 import './../App.css';
 import MainContent from './MainContent';
 import Sidebar from './Sidebar';
+import Corner from './Cornerbar';
 
 
 const StudentDashboard = () => {
@@ -10,6 +11,7 @@ const StudentDashboard = () => {
             <div className='AppGlass'>
             <Sidebar/>
             <MainContent/>
+            <Corner/>
             </div>            
         </div>
       );
