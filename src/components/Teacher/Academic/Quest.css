@@ -1,3 +1,10 @@
+.formcontrolr
+{ 
+    height: 20px;  
+    width: 20px;  
+    background-color: lightgray;  
+    border-radius: 50%;  
+}
 .Quest{
     background: linear-gradient(
         106.37deg,
@@ -6,13 +13,15 @@
         #d6b4ef 90.85% 
     );
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
+.questionName{
+    margin-left: 10px;
+}
 .Q-card{
     background: var(--glass);
-    height: 96%;
+    
     width: 96%;
 }
 .Q-Set{
@@ -49,14 +58,12 @@
 }
 .Question{
    background:rgb(255, 253, 253);
-   height:500px;
-   width: 700px;
    margin-top: 32px;
    border-radius: 1rem;
    border-width: 5px;
    border-color: rgb(234, 63, 63);
-   overflow-y: scroll;   
-}
+   overflow-y: scroll;
+   }
 .Question input {
    width: 568px; 
    border-width: 2px;  

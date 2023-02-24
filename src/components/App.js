@@ -7,6 +7,8 @@ import Home from './Header/Home';
 import Contact from '../components/Header/Contact';
 import About from '../components/Header/About';
 import Dashboard from './Header/Dashboard';
+import TeacherDashboard from './Teacher/TDash';
+import Quest from './Teacher/Academic/Quest';
 
 
 
@@ -17,14 +19,17 @@ function App() {
         <Router>
           <Header/>
           <Routes>
-              <Route exact path='/' element={<Home/>} />
+              <Route exact path='' element={<Home/>} />
               <Route path='/contact' element={<Contact/>} />
               <Route path='/about' element={<About/>} />
               <Route path='/Registration' element={<Register/>} />
+              <Route path='/Exam' element={<Quest/>} />
+              
 
           </Routes>
           <Routes>  
-              <Route path='/Dashboard' element={<Dashboard/>} />    
+          <Route path='/Dashboard' element={<Dashboard/>} />    
+          <Route path='/TDash' element={<TeacherDashboard/>} />    
           </Routes>  
         </Router>
      
