@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
-import '../Student/Data'
-import { SideBarData } from '../Student/Data';
+import { Link } from "react-router-dom";
+import './TSidebar.css'
 
 
+import { SideBarData } from './TeachData';
 
-
-
-const TSidebar = () => {
+const Sidebar = () => {
 
   const[selected,setSelected] = useState(0)
 
@@ -23,10 +22,12 @@ const TSidebar = () => {
               <div className={selected===index?'menu-item active':'menu-item'}
               key={index}
               onClick={()=>setSelected(index)}
+              onDoubleClick={()=>this.state({showSomething: true})}
               >
                 <span>
                   {item.heading}
                 </span>
+                <Link to = {item.URL} ></Link>
               </div>
             )
           })}
@@ -36,4 +37,4 @@ const TSidebar = () => {
   )
 }
 
-export default TSidebar
+export default Sidebar

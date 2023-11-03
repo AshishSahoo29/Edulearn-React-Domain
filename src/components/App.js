@@ -7,7 +7,7 @@ import Home from './Header/Home';
 import Contact from '../components/Header/Contact';
 import About from '../components/Header/About';
 import Dashboard from './Header/Dashboard';
-import TeacherDashboard from './Teacher/TDash';
+import TeacherDashboard from './Teacher/TeacherDashboard';
 import Quest from './Teacher/Academic/Quest';
 
 
@@ -29,7 +29,7 @@ function App() {
           </Routes>
           <Routes>  
           <Route path='/Dashboard' element={<Dashboard/>} />    
-          <Route path='/TDash' element={<TeacherDashboard/>} />    
+          <Route path='/TeacherDashboard' element={<TeacherDashboard/>} />    
           </Routes>  
         </Router>
      
