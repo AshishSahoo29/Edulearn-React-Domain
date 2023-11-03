@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import Corner from './Cornerbar';
 
 
+
 const StudentDashboard = () => {
     return (
         <div className="Std">
@@ -12,7 +13,7 @@ const StudentDashboard = () => {
             <Sidebar/>
             <MainContent/>
             <Corner/>
-            </div>            
+            </div>                       
         </div>
       );
 }

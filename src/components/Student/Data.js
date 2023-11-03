@@ -5,15 +5,15 @@ export const SideBarData = [
     },
     {
         heading: "My Class",
-        URL:"/Class"
+        URL:"/Class.js"
     },
     {
-        heading: "My Group",
-        URL:"/Group.js"
+        heading: "Academic",
+        URL:"/Academy.js"
     },
     {
-        heading: "Chat Box",
-        URL:"/Chat.js"
+        heading: "Performance",
+        URL:"/Performance.js"
     },
     {
         heading: "Settings",
