@@ -1,0 +1,72 @@
+.container {
+    margin-top: 20px;       
+    color: #1a202c;
+    text-align: left;
+    background-color: #e2e8f0;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+  }
+  
+  .main-body {
+    padding: 15px;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    margin: auto;
+  }
+  
+  .user-profile {
+    display: flex;
+    flex-direction: column;    
+    align-items: center; /* Center items horizontally within the profile card */
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+  
+  .profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+  }
+  
+  .profile-details {
+    text-align: center;
+  }
+  
+  .edit-button {
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;       
+    width: 500px;
+     /* Center items horizontally within the user info card */    
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .info-label {
+    flex: 1;
+    font-weight: bold;
+  }
+  
+  .info-value {
+    flex: 2;
+  }
+  
+  
