@@ -1,7 +1,7 @@
 import React  from 'react';
 import './../App.css';
 import MainContent from './TMainContent';
-import Sidebar from './TSidebar';
+import Sidebar from './TSideBar';
 import Corner from './TCornerbar';
 
 
