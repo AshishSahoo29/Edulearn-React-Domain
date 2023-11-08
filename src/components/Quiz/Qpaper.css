@@ -1,0 +1,121 @@
+.Quest{
+    background:  #e2e8f0;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Q-card{
+    background: var(--glass);
+    height: 96%;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Q-all{
+    height: 95vh;
+    width: 95%;
+    background: white;
+    display: flex; 
+    flex-direction: column;   
+    margin: auto;
+    border-radius: 1.5rem;
+    overflow-y: scroll; 
+    overflow-x: auto;
+        
+    
+}
+.Q-all Button{
+    background-color: limegreen;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 1rem;
+}
+.Q-all Button:hover{
+    background-color: crimson;
+}
+.F-info{
+    display: flex;    
+    margin-top: 20px;  
+    height: 100px;
+    justify-content: space-evenly;  
+}
+.F-quest{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+}
+.Q-Set{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    
+    
+}
+.Info{
+    background: rgb(202, 228, 244);
+    height: 500px;
+    width: 350px;
+    border-width: 5px;
+    border-color: darkblue;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column; 
+    border-radius: 1.5rem;
+    
+}
+.Info input{
+    margin-top: 25px;
+    margin-left: 15px;
+    border-width: 2px;
+}
+.Info label{
+    margin-top: 15px;
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+.Question{
+   background:rgb(255, 253, 253);
+   height:500px;
+   width: 700px;
+   margin-top: 32px;
+   border-radius: 1rem;
+   border-width: 5px;
+   border-color: rgb(234, 63, 63);
+   overflow-y: scroll;   
+}
+.Question input {
+   width: 568px; 
+   border-width: 2px;  
+   border-color: darkblue; 
+}
+.Rad{
+    margin-left: 48px;
+    width: 100px;
+}
+.Bbtn{
+    display: flex;
+    justify-content: center;      
+    gap: .5rem;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 100px;
+      
+    
+}
+.Bbtn Button{
+    background-color: rgb(8, 13, 79);
+    color:rgb(236, 236, 243);
+    font-weight: bold; 
+}
+.Bbtn button:hover{
+    background-color: blanchedalmond;
+    color: chocolate;
+}
