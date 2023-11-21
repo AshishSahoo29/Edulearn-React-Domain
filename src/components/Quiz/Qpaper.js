@@ -74,6 +74,47 @@ export default function Quest() {
     setQuestions(updatedQuestions);
   };
 
+
+
+
+  //Backend Integration
+    //Intrgration
+    const handleSaveExamInfo = async () => {
+      try {
+        const response = await fetch('/api/exams', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(examInfo),
+        });
+        const data = await response.json();
+        console.log('Response from backend:', data);
+        // Optionally handle the response from the backend here
+      } catch (error) {
+        console.error('Error saving exam information:', error);
+        // Handle error scenarios here
+      }
+    };
+    const saveQuestions = async () => {
+      try {
+        const response = await fetch('/api/questions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(questions),
+        });
+        const data = await response.json();
+        console.log('Response from backend:', data);
+        // Optionally handle the response from the backend here
+      } catch (error) {
+        console.error('Error saving questions:', error);
+        // Handle error scenarios here
+      }
+    };
+    
+
   return (
     <div className='Quest'>
       <div className='Q-card'>
@@ -103,7 +144,7 @@ export default function Quest() {
             value={examInfo.marks}
             onChange={(e) => handleExamInfoChange('marks', e.target.value)}/>
             <br></br>
-            <Button onClick={saveExamInfo}>Save Info</Button>
+            <Button onClick={handleSaveExamInfo}>Save Info</Button>
           </div>
 
           <div className='Question'>
@@ -179,7 +220,7 @@ export default function Quest() {
               ))}
             </ul>
             </div>
-            <Button>Submit</Button>
+            <Button onClick={saveQuestions}>Submit</Button>
           </div>
 
       </div>
