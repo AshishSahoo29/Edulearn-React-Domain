@@ -8,6 +8,24 @@ import FormLabel from '@mui/material/FormLabel';
 import { Button, Input, TextField } from '@mui/material';
 
 export default function Quest() {
+   //add state and function to save exam info
+   const [examInfo, setExamInfo] = useState({
+    name: '',
+    date: '',
+    duration: '',
+    marks: ''
+  });
+
+  const handleExamInfoChange = (field, value) => {
+    setExamInfo({ ...examInfo, [field]: value });
+  };
+
+  const saveExamInfo = () => {
+    // You can perform any additional logic here before saving the exam information
+    console.log('Saving Exam Information:', examInfo);
+    // You can store the examInfo data in a database or perform any other required actions here
+  };
+
   // State to manage quiz questions
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState({
@@ -63,16 +81,29 @@ export default function Quest() {
           <div className='Info'>
             {/* ... (previous code) ... */}
             <label htmlFor="exam-name">Name:</label>
-            <input type="text" placeholder="Advance Java" />
+            <input type="text" 
+             placeholder="Enter Exam Name"
+             value={examInfo.name}
+             onChange={(e) => handleExamInfoChange('name', e.target.value)}/>
 
             <label htmlFor="date">Date</label>
-            <input type="datetime-local" />
+            <input type="datetime-local" 
+            value={examInfo.date}
+            onChange={(e) => handleExamInfoChange('date', e.target.value)}/>
 
             <label htmlFor="time">Duration:</label>
-            <input type="text" />
+            <input type="text" 
+             placeholder="Enter Duration"
+             value={examInfo.duration}
+             onChange={(e) => handleExamInfoChange('duration', e.target.value)}/>
 
             <label htmlFor="marks">Marks:</label>
-            <input type="text" />
+            <input type="text" 
+            placeholder="Enter Marks"
+            value={examInfo.marks}
+            onChange={(e) => handleExamInfoChange('marks', e.target.value)}/>
+            <br></br>
+            <Button onClick={saveExamInfo}>Save Info</Button>
           </div>
 
           <div className='Question'>
@@ -125,10 +156,13 @@ export default function Quest() {
         {/* Display all questions */}
         <div className='Q-all'>
           <div className='F-info'>            
-            <strong>Name:</strong>
-            <strong>Date:</strong>
-            <strong>Duration:</strong>
-            <strong>Marks:</strong>            
+            <strong>Name:</strong> {examInfo.name}
+            <br />
+            <strong>Date:</strong> {examInfo.date}
+            <br />
+            <strong>Duration:</strong> {examInfo.duration}
+            <br />
+            <strong>Marks:</strong> {examInfo.marks}           
           </div>
           <div className='F-quest'>
             <h2>All Questions</h2>

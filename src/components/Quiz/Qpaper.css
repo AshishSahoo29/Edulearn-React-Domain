@@ -81,6 +81,19 @@
     font-weight: bold;
     color: darkblue;
 }
+.Info Button{
+    background-color: rgb(8, 13, 79);
+    color:rgb(236, 236, 243);
+    font-weight: bold; 
+    margin-top: 40px;    
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 2rem;
+}
+.Info Button:hover{
+    background-color: blanchedalmond;
+    color: chocolate;
+}
 .Question{
    background:rgb(255, 253, 253);
    height:500px;
